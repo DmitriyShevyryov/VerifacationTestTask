@@ -1,4 +1,4 @@
-		// Synatcore Test Task
+		// Syntacore Test Task
 		// Dmitriy Shevyrev
 	    This is verification test task for SCR1 iALU Main adder (https://github.com/syntacore/scr1/blob/master/src/core/pipeline/scr1_pipe_csr.sv) -> (1)
 operations ADD, SUB. 
