@@ -1,0 +1,22 @@
+		// Synatcore Test Task
+		// Dmitriy Shevyrev
+	    This is verification test task for SCR1 iALU Main adder (https://github.com/syntacore/scr1/blob/master/src/core/pipeline/scr1_pipe_csr.sv) -> (1)
+operations ADD, SUB. 
+
+        Testbench consists of:
+		1. Python-cocotb test file (main_adder_test.py)
+		2. Verilog-file with tested module (main_adder.v)
+		3. Verilog-wrapper-file for creating waveform (main_adder_test.v)
+		4. VCD-file with waveform (main_adder_waveform.vcd)
+		5. Coverage information (coverage.dat)
+		
+		Used apps:
+		1. Simulator: Verilator v5.018
+		2. GTKWave Analyzer v3.3.103
+		3. Cocotb
+		4. verilator-coverage
+		
+		Description:
+		First of all, I had to change HDL SystemVerilog to Verilog, because simulators confclicted with SystemVerilog (I tried a plenty of them). I created Main adder module,
+defined parameters and descripted given comb logic of module. In the source file (1) some values were inner wires, so for simulation and checking their conditions I had to make them reg
+outputs for module Main adder. In testcases I observed such situations in ariphmetics as overflow (positive/negative), carry and others. As a result, toggle coverage hitted all lines of code and all variables.
