@@ -9,6 +9,7 @@ operations ADD, SUB.
 		3. Verilog-wrapper-file for creating waveform (main_adder_test.v)
 		4. VCD-file with waveform (main_adder_waveform.vcd)
 		5. Coverage information (coverage.dat)
+                6. Makefile for running tests
 		
 		Used apps:
 		1. Simulator: Verilator v5.018
